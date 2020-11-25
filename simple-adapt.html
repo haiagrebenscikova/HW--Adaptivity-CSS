@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive CSS/Media Queries</title>
+    <style>
+        body {
+            background-color: #222;   
+        }
+        .container {
+            width: 1000px;
+            margin: 20px auto;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #444;
+        }
+        .container ul {
+            width: 350px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .container li { 
+            list-style: none;
+            }
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+        .container article {
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        @media (max-width: 600px) {
+        .container ul,
+        .container article {
+            display: block;
+            width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="">Lorem, ipsum.</a></li>
+            <li><a href="">Lorem, ipsum dolor.</a></li>
+            <li><a href="">Lorem ipsum dolor sit.</a></li>
+        </ul>
+        <article>
+            <h1>Lorem, ipsum.</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nam quibusdam veniam aliquid maiores corporis nihil, aperiam consequatur obcaecati voluptatum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perspiciatis nisi amet corporis alias maxime. Vero obcaecati aut error quam, excepturi exercitationem deserunt optio provident eveniet nesciunt, doloremque blanditiis quia.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet nobis vitae sequi. Iste earum perspiciatis minus facere tempora autem.
+
+            </p>
+        </article>
+    </div>
+</body>
+</html>

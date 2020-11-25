@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Nav CSS</title>
+    <style>
+        body {
+            background-color: #333;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            list-style:none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #111;
+        }
+        .navbar li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .navbar a {
+            color: white;
+            padding: 30px;
+            display: block;
+        }
+        .navbar .bars {
+            display: none;
+        }
+        @media (max-width: 720px) {
+            .navbar li {
+                display: none;
+            }
+            .navbar .logo,
+            .navbar .phone,
+            .navbar .bars {
+                display: inline-block;
+            }
+            .navbar .bars {
+                position: absolute;
+                right: 20px;   
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo"><a href="">
+               <img src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-38/64/Prey-logo-1-icon.png" alt="image">
+            </a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li class="phone"><a href="">Contact Us</a></li>
+            <li><a href="">Feedback</a></li>
+            <li class="bars"><a href="">
+                <img src="https://icons.iconarchive.com/icons/mazenl77/I-like-buttons/64/NN-Menu-icon.png" alt="">
+            </a></li>
+        </ul>
+    </nav>
+</body>
+</html>
